@@ -1,4 +1,5 @@
  # Problem
+
 Let's call an array *A* a mountain if the following properties hold:
 
 - *A.length >= 3* 
@@ -38,6 +39,7 @@ class Solution:
 ```
 
 - Solution 2, using binary search
+    - Time complexity is *O(log(N))*
 
 ```python
 class Solution:

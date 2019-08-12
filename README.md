@@ -1,5 +1,5 @@
-# Leetcode Solutions In Python
-- This project is used by myself for learning to solve [Leetcode questions](https://leetcode.com/problemset/all/) with Python 3. 
+# LeetCode Solutions In Python
+- This project is used by myself for learning to solve [LeetCode questions](https://leetcode.com/problemset/all/) with Python 3. 
 
 - Also, I want to be familiar with writing with [MarkDown](https://en.wikipedia.org/wiki/Markdown).
 

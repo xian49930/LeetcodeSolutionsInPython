@@ -67,6 +67,6 @@ class Solution(object):
 				low = mid + 1
 			if A[mid] > mid:
 				high = mid - 1
-			else:
-                return -1
+		else:
+			return -1
 ```

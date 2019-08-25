@@ -24,4 +24,21 @@ If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you wan
 # Solutions
 
 ## Solution 1
-- 
+- Idea: s is short, while t is long. So, check every item in t for once. Use a collection to keep evert item in s, then check t, if an item in t has been found in the collection, pop out the head of the collection.
+
+```python
+class Solution(object):
+	def isSubsequence(self, s, t):
+		"""
+		:type s: str
+		:type t: str
+		:rtype: bool
+		"""
+		queue = collections.deque(s)
+		for c in t:
+			if not queue:
+				return True
+			if c == queue[0]:
+				queue.popleft()
+			return not queue
+```

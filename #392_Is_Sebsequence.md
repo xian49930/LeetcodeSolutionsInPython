@@ -42,3 +42,23 @@ class Solution(object):
 				queue.popleft()
 			return not queue
 ```
+
+## Solution 2
+- Idea: using two pointers, instead of the collections. Two pointers point to s and t, correspondingly. If the item in s has been found in t, then move the pointer of s forward; otherwise, only move t's pointer forward.
+
+```python
+class Solution(object):
+	def isSubsequence(self, s, t):
+		"""
+		:type s: str
+		:type t: str
+		:rtype: bool
+		"""
+		pointer_s, pointer_t = 0, 0
+		while pointer_s < len(s) and pointer_t < len(t):
+			if t[pointer_t] == s[pointer_s]:
+				pointer_s += 1
+		return pointer_s == len(s)
+
+```
+
